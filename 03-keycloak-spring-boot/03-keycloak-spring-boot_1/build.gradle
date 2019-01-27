@@ -22,7 +22,7 @@ repositories {
 }
 
 ext {
-	set('keycloakVersion', '3.4.2.Final')
+	set('keycloakVersion', '4.0.0.Final')
 }
 
 dependencies {
