@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+</head>
+<body>
+
+<h1>Hello <span th:text="${member}"></span></h1>
+
+<p>This page is protected. You have member privileges, so you can browse the books.</p>
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="#">Browse Books</a></li>
+    <li><a href="/manager">Manage Library</a></li>
+    <li><a href="/logout">Logout</a></li>
+</ul>
+
+</body>
+</html>

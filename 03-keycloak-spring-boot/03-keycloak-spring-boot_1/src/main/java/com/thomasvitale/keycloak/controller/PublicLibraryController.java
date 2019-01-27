@@ -1,4 +1,4 @@
-package com.thomasvitale.keycloak.demo.controllers;
+package com.thomasvitale.keycloak.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,29 +10,28 @@ import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 
 @Controller
-public class AppController {
+public class PublicLibraryController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getHome() {
 		return "index";
 	}
 
-	@RequestMapping(value = "/user", method = RequestMethod.GET)
-	public String getUser(Principal principal, Model model) {
-		model.addAttribute("user", principal.getName());
-		return "user";
+	@RequestMapping(value = "/books", method = RequestMethod.GET)
+	public String getBooks(Principal principal, Model model) {
+		model.addAttribute("member", principal.getName());
+		return "books";
 	}
 
-	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	public String getAdmin(Principal principal, Model model) {
-		model.addAttribute("admin", principal.getName());
-		return "admin";
+	@RequestMapping(value = "/manager", method = RequestMethod.GET)
+	public String getManager(Principal principal, Model model) {
+		model.addAttribute("librarian", principal.getName());
+		return "manager";
 	}
 
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public String handleLogout(HttpServletRequest request) throws ServletException {
+	public String logout(HttpServletRequest request) throws ServletException {
 		request.logout();
 		return "redirect:/";
 	}
-
 }
