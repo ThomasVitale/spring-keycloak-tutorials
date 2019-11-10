@@ -1,26 +1,46 @@
-.gradle
-/build/
-/gradle/wrapper/gradle-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+# Eclipse
 .project
+.classpath
+.settings/
+bin/
+
+# STS
+.apt_generated
+.factorypath
 .settings
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# IntelliJ
 .idea
-*.iws
-*.iml
 *.ipr
+*.iml
+*.iws
 /out/
 
-### NetBeans ###
+# NetBeans
+nb-configuration.xml
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# Visual Studio Code
+.vscode
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar

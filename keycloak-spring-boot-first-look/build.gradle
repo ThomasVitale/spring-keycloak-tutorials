@@ -23,7 +23,7 @@ repositories {
 }
 
 ext {
-	set('keycloakVersion', '6.0.1')
+	set('keycloakVersion', '7.0.1')
 }
 
 dependencies {
