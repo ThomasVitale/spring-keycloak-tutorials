@@ -13,7 +13,7 @@ The repo for my article series about Keycloak and how to use it to secure Spring
 
 ### Spring Security and Keycloak to Secure a Spring Boot Application  - A First Look
 
-* Article: Coming soon
+* Article: [Spring Security and Keycloak to Secure a Spring Boot Application  - A First Look](www.thomasvitale.com/spring-security-keycloak/)
 * Project: [keycloak-spring-security-first-look](https://github.com/ThomasVitale/spring-keycloak-tutorials/tree/master/keycloak-spring-security-first-look)
 
 ## Keycloak Series
