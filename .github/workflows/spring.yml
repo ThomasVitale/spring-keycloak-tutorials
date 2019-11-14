@@ -1,0 +1,25 @@
+name: Spring CI
+
+on: [push]
+
+jobs:
+  build:
+    name: Spring and Keycloak
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Build keycloak-spring-boot-first-look
+        run: |
+          cd keycloak-spring-boot-first-look
+          chmod +x gradlew
+          ./gradlew build
+      - name: Build keycloak-spring-security-first-look
+        run: |
+          cd keycloak-spring-security-first-look
+          chmod +x gradlew
+          ./gradlew build
