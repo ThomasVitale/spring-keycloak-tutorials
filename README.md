@@ -1,5 +1,7 @@
 # Keycloak and Spring Tutorials
 
+![](https://github.com/ThomasVitale/spring-keycloak-tutorials/workflows/Spring%20CI/badge.svg)
+
 The repo for my article series about Keycloak and how to use it to secure Spring Boot applications and services.
 
 ## Keycloak With Spring Series
